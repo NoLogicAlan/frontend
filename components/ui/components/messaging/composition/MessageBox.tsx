@@ -47,6 +47,7 @@ const Base = styled("div", "MessageBox")`
 
   display: flex;
 
+  font-size: 90%;
   color: ${({ theme }) => theme!.colours["foreground-200"]};
   background: ${({ theme }) => theme!.colours["background-300"]};
 `;
@@ -63,6 +64,7 @@ const Input = styled("textarea")`
   flex-grow: 1;
   padding: 14px 0;
 
+  font-size: inherit;
   font-family: ${({ theme }) => theme!.fonts.primary};
   color: ${({ theme }) => theme!.colours.foreground};
 `;
@@ -89,7 +91,7 @@ const Button = styled("a")`
 /**
  * Specific-width containers
  */
-const Spacer = styled("div")<{ size: "short" | "normal" | "wide" }>`
+const Spacer = styled("div") <{ size: "short" | "normal" | "wide" }>`
   display: grid;
   flex-shrink: 0;
   place-items: center;

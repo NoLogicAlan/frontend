@@ -66,7 +66,7 @@ const Nav = styled("div")`
 /**
  * Navigation items
  */
-const NavItems = styled("div")<{
+const NavItems = styled("div") <{
   stack?: boolean;
   hide?: boolean;
   grow?: boolean;
@@ -171,7 +171,7 @@ export function AuthPage() {
         <NavItems hide>
           {t("general.image_by")} @fakurian
           <Bullet />
-          <a>unsplash.com</a>
+          <a href="https://unsplash.com/">unsplash.com</a>
         </NavItems>
       </Nav>
     </Base>
